@@ -1,1 +1,174 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상무지구 보안관 홍준성 | 리미티드 에디션</title>
+    <style>
+        :root {
+            --police-blue: #1e3a8a;
+            --police-red: #be123c;
+            --gym-gold: #fbbf24;
+            --bg-color: #0f172a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Pretendard', sans-serif; 
+            background-color: var(--bg-color); 
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* 경광등 애니메이션 */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(90deg, #1e3a8a 0%, #be123c 100%);
+            border-bottom: 8px solid var(--gym-gold);
+            animation: siren 1s infinite;
+        }
+
+        @keyframes siren {
+            0% { box-shadow: inset 0 0 50px #1e3a8a; }
+            50% { box-shadow: inset 0 0 50px #be123c; }
+            100% { box-shadow: inset 0 0 50px #1e3a8a; }
+        }
+
+        .profile-frame {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 6px solid var(--gym-gold);
+            overflow: hidden;
+            background: #2d3748;
+        }
+
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .tag {
+            background: #fff;
+            color: var(--police-blue);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* 메인 컨텐츠 */
+        section { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+        .card { 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 30px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 { color: var(--gym-gold); margin-bottom: 20px; font-size: 1.5rem; text-align: center; }
+
+        /* 능력치 */
+        .stat-bar { margin-bottom: 20px; }
+        .stat-info { display: flex; justify-content: space-between; margin-bottom: 8px; }
+        .bar-outer { background: #334155; height: 15px; border-radius: 10px; overflow: hidden; }
+        .bar-inner { height: 100%; background: var(--gym-gold); border-radius: 10px; transition: 1s; }
+
+        /* 특징 */
+        .desc-list { list-style: none; }
+        .desc-list li { 
+            padding: 15px; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .desc-list li:last-child { border: none; }
+
+        .btn-catch {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--police-red);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 800;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tag">🚨 관찰대상: 예비 경찰공무원 🚨</div>
+        <div class="profile-frame">
+            <img src="junsung.jpg" alt="홍준성 얼굴">
+        </div>
+        <h1>홍준성 (26세)</h1>
+        <p>상무지구 거주 | 근육형 까불이 | 꾸준함의 화신</p>
+    </header>
+
+    <section>
+        <h2>공식 능력치 보고서</h2>
+        <div class="card">
+            <div class="stat-bar">
+                <div class="stat-info"><span>헬스장 출석률 (꾸준함)</span><span>999%</span></div>
+                <div class="bar-outer"><div class="bar-inner" style="width: 100%; background: #10b981;"></div></div>
+            </div>
+            <div class="stat-bar">
+                <div class="stat-info"><span>까불거림 및 킹받게 하기</span><span>120%</span></div>
+                <div class="bar-outer"><div class="bar-inner" style="width: 100%; background: #f59e0b;"></div></div>
+            </div>
+            <div class="stat-bar">
+                <div class="stat-info"><span>경찰 체력시험 예상 점수</span><span>만점</span></div>
+                <div class="bar-outer"><div class="bar-inner" style="width: 95%; background: #3b82f6;"></div></div>
+            </div>
+            <div class="stat-bar">
+                <div class="stat-info"><span>상무지구 헌팅포차 방어력(?)</span><span>0%</span></div>
+                <div class="bar-outer"><div class="bar-inner" style="width: 5%; background: #ef4444;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>상세 특징 분석</h2>
+        <div class="card">
+            <ul class="desc-list">
+                <li>🏋️ <strong>꾸준함의 대명사</strong>: 비가 오나 눈이 오나 쇠질하러 가는 독한 놈.</li>
+                <li>🤡 <strong>까불이 본능</strong>: 30초 이상 진지하면 몸에 가시가 돋는 타입.</li>
+                <li>👮 <strong>미래의 경찰</strong>: 범인 잡을 체력은 이미 완성됨. (정신력만 좀...)</li>
+                <li>📍 <strong>상무지구 지박령</strong>: 상무지구에서 준성이 모르면 간첩.</li>
+            </ul>
+            <button class="btn-catch" onmouseover="runAway(this)">준성 잡으러 가기</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Gwangju Police Agency (Fake). 지켜보고 있다 준성아.</p>
+    </footer>
+
+    <script>
+        function runAway(btn) {
+            const x = Math.random() * (window.innerWidth - btn.clientWidth);
+            const y = Math.random() * (window.innerHeight - btn.clientHeight);
+            btn.style.position = 'fixed';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+            btn.innerText = "안잡히지롱~ 까불까불";
+        }
+    </script>
+
+</body>
+</html>
